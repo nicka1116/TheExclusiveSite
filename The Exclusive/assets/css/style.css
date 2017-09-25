@@ -893,9 +893,22 @@ blockquote {
   letter-spacing: 2px;
 }
 
+.font-alt-white {
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
 .font-serif {
   font-family: Volkhov, "Times New Roman", sans-serif;
   font-style: italic;
+}
+
+.font-serif-white {
+  font-family: Volkhov, "Times New Roman", sans-serif;
+  font-style: italic;
+  color: #fff;
 }
 
 .large-text {
@@ -916,10 +929,27 @@ blockquote {
   margin: 0 0 70px;
 }
 
+.module-title {
+  position: relative;
+  letter-spacing: 4px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  color: #fff;
+  margin: 0 0 70px;
+}
+
 .module-subtitle {
   text-align: center;
   font-size: 16px;
   color: #111;
+  margin-bottom: 70px;
+}
+
+.module-subtitle-white {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
   margin-bottom: 70px;
 }
 
