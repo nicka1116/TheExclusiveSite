@@ -893,22 +893,9 @@ blockquote {
   letter-spacing: 2px;
 }
 
-.font-alt-white {
-  font-family: "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #fff;
-}
-
 .font-serif {
   font-family: Volkhov, "Times New Roman", sans-serif;
   font-style: italic;
-}
-
-.font-serif-white {
-  font-family: Volkhov, "Times New Roman", sans-serif;
-  font-style: italic;
-  color: #fff;
 }
 
 .large-text {
