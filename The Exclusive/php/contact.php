@@ -43,8 +43,8 @@
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 	$from = $email;
-	$to = 'info@example.com';  // please change this email id
-	$subject = 'Contact Form : Titan - The best downloaded template ever';
+	$to = 'info@theexclusivemusic.com';  // please change this email id
+	$subject = 'Hello';
 
 	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
