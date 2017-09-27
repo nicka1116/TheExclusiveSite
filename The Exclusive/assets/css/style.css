@@ -309,6 +309,10 @@ a,
   background-size: cover;
 }
 
+.parallax {
+  background-attachment: fixed;
+}
+
 /* Vertical margin, padding */
 .p-0 {
   padding: 0 !important;
@@ -916,7 +920,11 @@ blockquote {
   margin: 0 0 70px;
 }
 
-.module-title {
+.px42 {
+  font-size: 42px;
+}
+
+.module-title-white {
   position: relative;
   letter-spacing: 4px;
   text-align: center;
@@ -1396,6 +1404,16 @@ General Styles - Owlcarousel
   background-size: cover;
 }
 
+.home-section-contain {
+  position: relative;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  z-index: 0;
+  background-size: 50%;
+}
+
 .titan-title-size-1 {
   letter-spacing: 4px;
   font-size: 15px;
@@ -1714,7 +1732,7 @@ Google map
 	Restaurant Menu
 --------------------------------------------------------------*/
 .menu {
-  border-bottom: 1px dotted #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
   padding: 0 0 10px;
   margin: 0 0 20px;
 }
@@ -1722,8 +1740,8 @@ Google map
 .menu-title,
 .menu-price {
   margin: 0 0 10px;
-  font-size: 14px;
-  color: #111;
+  font-size: 40px;
+  color: #fff;
 }
 
 .menu-price-detail {
