@@ -2978,3 +2978,7 @@ Google map
     width: 100%;
   }
 }
+
+.highlighted {
+    background-color: rgba(0,0,0,.5);
+}
