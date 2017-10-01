@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html lang="en-US" dir="ltr" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:fb="http://ogp.me/ns/fb#">
   <head>
+    <meta property="og:image" content="assets/images/AlbumArt.png" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,6 +56,53 @@
     <!-- Main stylesheet and color file-->
     <link href="assets/css/style.css" rel="stylesheet">
     <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+    <!-- Structured data-->
+
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "MusicGroup",
+      "url": "http://www.theexclusivemusic.com",
+      "name": "The Exclusive",
+      "image" : "http://theexclusivemusic.com/assets/images/ExclusiveMain.png",
+      "description" : "The Exclusive is a two-part music project from Philadelphia, Pennsylvania.",
+      "potentialAction": {
+     "@type": "ListenAction",
+     "target": [
+       {
+         "@type": "EntryPoint",
+         "urlTemplate": "http://www.example.com/artist/Katy-Perry/?autoplay=true",
+         "actionPlatform": [
+           "http://schema.org/DesktopWebPlatform",
+           "http://schema.org/IOSPlatform",
+           "http://schema.org/AndroidPlatform"
+         ],
+         "InLanguage": "USD"
+       },
+       {
+         "@type": "EntryPoint",
+         "urlTemplate": "android-app://com.example.app/examplescheme/artist/Katy-Perry/?autoplay=true",
+         "actionPlatform": "http://schema.org/AndroidPlatform",
+         "InLanguage": "USD"
+       }
+     ],
+     "expectsAcceptanceOf": {
+       "@type": "Offer",
+       "eligibleRegion": [
+         {
+           "@type": "Country",
+           "name": "US"
+         },
+         {
+           "@type": "Country",
+           "name": "BR"
+         }
+       ]
+     }
+   }
+ }
+    </script>
+
 
   </head>
   <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
@@ -77,18 +126,22 @@
       </nav>
 
 
-      <section class="home-section home-full-height bg-dark" id="home" data-background="assets/images/ExclusiveMain.png">
+      <section class="home-section home-full-height bg-dark" id="home" data-background="assets/images/ExclusiveMain.png" href="www.soundcloud.com/theexclusivemusic/">
         <div class="titan-caption">
           <div class="caption-content">
             <div class="font-alt mb-40 titan-title-size-5"><span style="background-color:rgba(0, 0, 0, 0.7)">The Exclusive</span></br></div>
+            <div class="font-alt mb-40 titan-title-size-3"><span style="background-color:rgba(0, 0, 0, 0.7)"><a href="http://www.soundcloud.com/theexclusivemusic/">Introducing our New Single<i class="fa fa-play-circle" aria-hidden="true"></i></a></div>
         </div>
+
       </section>
-      <section class="home-section home-full-height bg-dark" id="home" data-background="assets/images/ExclusiveSingle.png">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/344651076&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+
+      <!--section class="home-section home-full-height bg-dark" id="home" data-background="assets/images/ExclusiveSingle.png">
         <div class="titan-caption">
           <div class="caption-content">
             <div class="font-alt mb-40 titan-title-size-3"><span style="background-color: #000">New Single | September 29</span></div>
         </div>
-      </section>
+      </section-->
 
 <!--
       <section class="module bg-dark-30 parallax-bg restaurant-menu-bg" data-background="assets/images/restaurant/cake_pastries_bg.jpg">

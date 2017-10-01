@@ -481,6 +481,46 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
         });
 
+        /*===============================================================
+         Working order Form
+         ================================================================*/
+
+        $("#orderForm").submit(function (e) {
+
+            e.preventDefault();
+            var $ = jQuery;
+
+            var postData = $(this).serializeArray(),
+                formURL = $(this).attr("action"),
+                $cfResponse = $('#orderFormResponse'),
+                $cfsubmit = $("#ofsubmit"),
+                cfsubmitText = $cfsubmit.text();
+
+            $cfsubmit.text("Sending...");
+
+
+            $.ajax(
+                {
+                    url: formURL,
+                    type: "POST",
+                    data: postData,
+                    success: function (data) {
+                        $cfResponse.html(data);
+                        $cfsubmit.text(cfsubmitText);
+                        $('#orderForm input[name=name]').val('');
+                        $('#orderForm input[name=item]').val('');
+                        $('#orderForm input[name=email]').val('');
+                        $('#orderForm input[name=size]').val('');
+                        $('#orderForm input[number=quantity]').val('');
+                    },
+                    error: function (data) {
+                        alert("Error occurd! Please try again");
+                    }
+                });
+
+            return false;
+
+        });
 
         /*===============================================================
          Working Request A Call Form
